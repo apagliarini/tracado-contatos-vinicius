@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VINÍCIUS ASSAD</title>
+  <style>
+    :root{
+      --red:#E53323;
+      --card:#141414cc;
+      --card2:#1a1a1acc;
+      --text:#f7f7f7;
+      --muted:#b9b9b9;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Poppins', Arial, sans-serif;
+      color:var(--text);
+      display:flex;justify-content:center;align-items:flex-start;
+      min-height:100vh;padding:28px;
+      overflow-x:hidden;
+    }
+    /* Background photo with softer grayscale + less blur */
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      background: url('DSCF7734 copy.jpg') center/cover no-repeat;
+      filter: grayscale(.5) blur(3px) brightness(.75);
+      transform: scale(1.04);
+      z-index:-2;
+    }
+    body::after{
+      content:"";
+      position:fixed; inset:0;
+      background: rgba(0,0,0,.2);
+      z-index:-1;
+    }
+    .wrap{width:min(760px,100%);}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:22px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0
